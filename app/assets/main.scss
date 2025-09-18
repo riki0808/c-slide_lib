@@ -1,0 +1,76 @@
+// @use "vuetify/styles";
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.underline-box{
+  border-bottom: 1px solid lightgrey;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.treeItem{
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid lightgrey;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.treeLine{
+  width: 3px;
+  height: 30px;
+  background-color: grey;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.treeBorder{
+  position: relative;
+  font-weight: bold;
+  &:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: grey;
+    top: 0;
+    /* top: 50% ※下側に当てたい場合 */
+    left: 0;
+  }
+}
+
+.treeBorder:first-child {
+  position: relative;
+  font-weight: bold;
+  &:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 50%;
+    background-color: grey;
+    top: 0;
+    /* top: 50% ※下側に当てたい場合 */
+    left: 50%;
+  }
+}
+
+.treeBorder:last-child {
+  position: relative;
+  font-weight: bold;
+  &:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 50%;
+    background-color: grey;
+    top: 0;
+    /* top: 50% ※下側に当てたい場合 */
+    left: 0;
+  }
+}

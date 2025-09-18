@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "HOST='0.0.0.0' PORT=3007 nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "hosting": "firebase deploy --only hosting",
+    "deploy": "yarn build && yarn generate && firebase deploy --only hosting"
+  },
+  "devDependencies": {
+    "dayjs-nuxt": "^2.1.9",
+    "nuxt": "^3.9.3",
+    "nuxt-pdfmake": "^0.0.16",
+    "sass": "^1.70.0",
+    "vite-plugin-vuetify": "^2.0.1",
+    "vue": "^3.4.14",
+    "vue-router": "^4.2.5",
+    "vuetify": "^3.5.1",
+    "vuetify-nuxt-module": "^0.10.2"
+  },
+  "dependencies": {
+    "@mdi/js": "^7.4.47",
+    "@supabase/supabase-js": "^2.39.3",
+    "dayjs": "^1.11.10"
+  }
+}
