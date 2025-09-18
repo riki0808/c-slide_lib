@@ -21,6 +21,12 @@ export default defineNuxtConfig({
   //   },
   // },
   ssr: false,
+    runtimeConfig: {
+      public: {
+        supabase_url: process.env.SUPABASE_URL,
+        supabase_anon: process.env.SUPABASE_KEY,
+      }
+    },
   css: ["@/assets/main.scss"],
   modules: ["vuetify-nuxt-module", "dayjs-nuxt"],
   vuetify: {

@@ -10,10 +10,16 @@
 <script setup>
 import {definePageMeta} from "#imports";
 
-definePageMeta({})
+definePageMeta({
+  layout: "default",
+  // middleware: ['auth', 'check-team-access'],
+})
+
+const { $supabase, $dayjs } = useNuxtApp();
+console.log("$supabase", $supabase)
 
 async function signOut() {
-  await auth.signOut();
+  // await auth.signOut();
   navigateTo('/signin');
 }
 </script>
